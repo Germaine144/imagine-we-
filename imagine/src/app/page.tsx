@@ -67,7 +67,7 @@ const KigaliEssentials: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/kigali-skyline.jpg"
+                src="/images/kighali4.jpg"
                 alt="Kigali Skyline"
                 fill
                 className="object-cover hover:scale-110 transition-transform duration-700"
@@ -133,7 +133,7 @@ const KigaliEssentials: React.FC = () => {
               </div>
               <div className="order-1 md:order-2 relative h-96 rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/kigali-traditional.jpg"
+                  src="/images/col1.jpg"
                   alt="Traditional Rwanda"
                   fill
                   className="object-cover hover:scale-110 transition-transform duration-700"
@@ -145,7 +145,7 @@ const KigaliEssentials: React.FC = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/kigali-colonial.jpg"
+                  src="/images/col.jpg"
                   alt="Colonial Kigali"
                   fill
                   className="object-cover hover:scale-110 transition-transform duration-700"
@@ -202,7 +202,7 @@ const KigaliEssentials: React.FC = () => {
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
               <div className="relative h-64">
                 <Image
-                  src="/images/kigali-clean.jpg"
+                  src="/images/Kigali.jpg"
                   alt="Clean Kigali"
                   fill
                   className="object-cover"
@@ -221,7 +221,7 @@ const KigaliEssentials: React.FC = () => {
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
               <div className="relative h-64">
                 <Image
-                  src="/images/kigali-tech.jpg"
+                  src="/images/Kigali1.jpg"
                   alt="Tech Kigali"
                   fill
                   className="object-cover"
@@ -239,7 +239,7 @@ const KigaliEssentials: React.FC = () => {
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
               <div className="relative h-64">
                 <Image
-                  src="/images/kigali-safe.jpg"
+                  src="/images/walking.jpg"
                   alt="Safe Kigali"
                   fill
                   className="object-cover"
@@ -302,7 +302,7 @@ const KigaliEssentials: React.FC = () => {
             </div>
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/kigali-modern.jpg"
+                src="/images/kcc1.jpg"
                 alt="Modern Kigali"
                 fill
                 className="object-cover hover:scale-110 transition-transform duration-700"
