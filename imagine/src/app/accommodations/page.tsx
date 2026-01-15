@@ -7,7 +7,7 @@ import { Hotel, Home, Building2, Wifi, Coffee, Utensils, Car, Star, MapPin, Doll
 interface Accommodation {
   id: number;
   name: string;
-  type: 'luxury' | 'mid-range' | 'budget' | 'apartment' | 'guesthouse';
+ type: 'luxury' | 'mid-range' | 'budget' | 'apartment' | 'guesthouse' | 'boutique';
   description: string;
   image: string;
   rating: number;
@@ -16,6 +16,9 @@ interface Accommodation {
   amenities: string[];
   icon: any;
 }
+
+
+
 
 const WhereToStay: React.FC = () => {
   const [activeType, setActiveType] = useState<string>('all');
@@ -27,19 +30,29 @@ const WhereToStay: React.FC = () => {
     { id: 'budget', name: 'Budget Friendly', icon: Home },
     { id: 'apartment', name: 'Apartments', icon: Home },
     { id: 'guesthouse', name: 'Guesthouses', icon: Home },
+    { id: 'boutique', name: 'Boutique Hotels', icon: Building2 },
   ];
 
   const accommodations: Accommodation[] = [
     {
       id: 1,
-      name: 'Kigali Serena Hotel',
+      name: 'MovenpickHotel Kigali',
       type: 'luxury',
-      description: '5-star luxury hotel in the heart of Kigali offering world-class amenities, elegant rooms, and exceptional service.',
-      image: '/images/serena-hotel.jpg',
+      description: 'A luxury hotel offering elegant rooms, fine dining, modern amenities, and exceptional service in Kigali’s city center.',
+      image: '/images/moven.jpg',
       rating: 4.8,
-      priceRange: '$$$$ - $200-400/night',
+      priceRange: '$$$$ - $600-1000/night',
       location: 'City Center',
-      amenities: ['Free WiFi', 'Restaurant', 'Pool', 'Spa', 'Gym', 'Business Center'],
+     amenities: [
+    "Free Wi-Fi",
+    "Swimming Pool",
+    "Fitness Center",
+    "Spa & Wellness",
+    "Restaurant & Bar",
+    "Conference Facilities",
+    "Airport Shuttle",
+    "24/7 Room Service"
+  ],
       icon: Hotel
     },
     {
@@ -47,7 +60,7 @@ const WhereToStay: React.FC = () => {
       name: 'Radisson Blu Hotel & Convention Centre',
       type: 'luxury',
       description: 'Modern luxury hotel with stunning city views, conference facilities, and premium dining options.',
-      image: '/images/radisson-blu.jpg',
+      image: '/images/radison.jpg',
       rating: 4.7,
       priceRange: '$$$$ - $180-350/night',
       location: 'Kigali Heights',
@@ -59,7 +72,7 @@ const WhereToStay: React.FC = () => {
       name: 'The Retreat',
       type: 'luxury',
       description: 'Boutique luxury retreat offering privacy, tranquility, and personalized service in a beautiful setting.',
-      image: '/images/the-retreat.jpg',
+      image: '/images/retreat hote.jpg',
       rating: 4.9,
       priceRange: '$$$$ - $250-450/night',
       location: 'Kacyiru',
@@ -68,14 +81,14 @@ const WhereToStay: React.FC = () => {
     },
     {
       id: 4,
-      name: 'Hotel des Mille Collines',
-      type: 'mid-range',
-      description: 'Historic hotel with comfortable rooms, great service, and a central location. Famous from "Hotel Rwanda".',
-      image: '/images/mille-collines.jpg',
+      name: 'The Pinnacle Kigali',
+      type: 'luxury',
+      description: 'A deluxe boutique hotel offering luxury rooms, fine dining, world-class amenities, and breathtaking Kigali city views.',
+      image: '/images/pinache.png',
       rating: 4.5,
       priceRange: '$$$ - $120-200/night',
       location: 'City Center',
-      amenities: ['Free WiFi', 'Restaurant', 'Pool', 'Bar', 'Room Service', 'Parking'],
+       amenities: ["Free WiFi", "Restaurant", "Pool", "Bar", "Room Service", "Parking"],
       icon: Building2
     },
     {
@@ -83,7 +96,7 @@ const WhereToStay: React.FC = () => {
       name: 'Park Inn by Radisson',
       type: 'mid-range',
       description: 'Contemporary hotel offering comfortable accommodations with modern amenities at reasonable prices.',
-      image: '/images/park-inn.jpg',
+      image: '/images/parkin.jpg',
       rating: 4.4,
       priceRange: '$$$ - $100-180/night',
       location: 'Kiyovu',
@@ -95,7 +108,7 @@ const WhereToStay: React.FC = () => {
       name: 'Heaven Boutique Hotel',
       type: 'mid-range',
       description: 'Stylish boutique hotel with panoramic city views, rooftop restaurant, and vibrant atmosphere.',
-      image: '/images/heaven-hotel.jpg',
+      image: '/images/heaven.jpg',
       rating: 4.6,
       priceRange: '$$$ - $90-160/night',
       location: 'Kiyovu',
@@ -104,10 +117,10 @@ const WhereToStay: React.FC = () => {
     },
     {
       id: 7,
-      name: 'Discover Rwanda Youth Hostel',
+      name: 'Victory Villa Apartment Hotel',
       type: 'budget',
       description: 'Clean, friendly hostel perfect for backpackers and budget travelers. Great place to meet fellow travelers.',
-      image: '/images/youth-hostel.jpg',
+      image: '/images/hut.jpg',
       rating: 4.2,
       priceRange: '$ - $15-40/night',
       location: 'Kimihurura',
@@ -116,34 +129,52 @@ const WhereToStay: React.FC = () => {
     },
     {
       id: 8,
-      name: 'Okapi Hotel',
-      type: 'budget',
-      description: 'Affordable hotel with basic but clean rooms, friendly staff, and convenient location.',
-      image: '/images/okapi-hotel.jpg',
+      name: 'Mythos Boutique Hotel',
+      type: 'boutique',
+      description: 'A stylish boutique hotel in Kigali’s Kiyovu district offering elegant rooms, personalized service, and scenic views over the Kimihurura Valley.',
+      image: '/images/my.jpg',
       rating: 4.0,
       priceRange: '$$ - $40-70/night',
       location: 'City Center',
-      amenities: ['Free WiFi', 'Restaurant', 'Parking', 'Airport Transfer', '24h Reception'],
-      icon: Home
+        amenities: [
+    "Free WiFi",
+    "Restaurant",
+    "Outdoor Pool",
+    "Bar/Lounge",
+    "24‑Hour Room Service",
+    "Parking",
+    "Fitness Center",
+    "Conference Facilities"
+  ],
+      icon: Building2 
     },
     {
       id: 9,
-      name: 'Five to Five Hotel',
-      type: 'budget',
-      description: 'Budget-friendly accommodation with comfortable rooms and good value for money.',
-      image: '/images/five-to-five.jpg',
+      name: 'MayaResidencesRwanda',
+      type: 'mid-range',
+      description: 'A stylish urban hotel offering modern, apartment‑style rooms with city views, comfort, and easy access to Kigali’s key attractions.',
+      image: '/images/maya1.jpg',
       rating: 4.1,
-      priceRange: '$$ - $50-80/night',
+      priceRange: '$$ - $500-800/night',
       location: 'Remera',
-      amenities: ['Free WiFi', 'Restaurant', 'Bar', 'Parking', 'Room Service'],
-      icon: Home
+     amenities: [
+    "Free WiFi",
+    "Restaurant",
+    "Bar",
+    "Airport Shuttle",
+    "Room Service",
+    "Free Parking",
+    "24‑Hour Front Desk",
+    "Garden & Terrace"
+  ],
+      icon:Building2
     },
     {
       id: 10,
       name: 'Kigali Luxury Apartments',
       type: 'apartment',
       description: 'Fully furnished apartments with kitchens, perfect for extended stays and families.',
-      image: '/images/luxury-apartments.jpg',
+      image: '/images/pinnache.jpg',
       rating: 4.5,
       priceRange: '$$$ - $80-150/night',
       location: 'Kimihurura',
@@ -155,7 +186,7 @@ const WhereToStay: React.FC = () => {
       name: 'Urban Stay Apartments',
       type: 'apartment',
       description: 'Modern serviced apartments with weekly rates available. Great for digital nomads and long stays.',
-      image: '/images/urban-stay.jpg',
+      image: '/images/poivre-noir-kigali.jpg',
       rating: 4.4,
       priceRange: '$$ - $60-120/night',
       location: 'Kacyiru',
@@ -164,14 +195,23 @@ const WhereToStay: React.FC = () => {
     },
     {
       id: 12,
-      name: 'Chez Lando',
-      type: 'guesthouse',
-      description: 'Cozy guesthouse with a homey atmosphere and personalized service. Popular among repeat visitors.',
-      image: '/images/chez-lando.jpg',
+      name: 'Select Boutique',
+      type: 'boutique',
+      description: 'A charming boutique hotel in Kigali offering personalized comfort, garden terraces, excellent dining, and easy access to the Convention Centre and city attractions',
+      image: '/images/select.jpg',
       rating: 4.6,
-      priceRange: '$$ - $50-90/night',
-      location: 'Kiyovu',
-      amenities: ['Free WiFi', 'Breakfast Included', 'Garden', 'Terrace', 'Parking'],
+      priceRange: '$$ - $90 – $1200/night',
+      location: 'Nyarutarama',
+       amenities: [
+    "Free WiFi",
+    "2 Restaurants",
+    "Bar/Lounge",
+    "Free Continental Breakfast",
+    "24‑Hour Room Service",
+    "Meeting Room",
+    "Garden & Terrace",
+    "Free Parking"
+  ],
       icon: Home
     },
   ];
