@@ -67,7 +67,7 @@ const KigaliEssentials: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/kighali4.jpg"
+                src="/images/bg3.jpg"
                 alt="Kigali Skyline"
                 fill
                 className="object-cover hover:scale-110 transition-transform duration-700"

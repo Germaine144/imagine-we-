@@ -56,9 +56,9 @@ const Header: React.FC = () => {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             <Link
-              href="/about"
+              href="/"
               className={`text-sm xl:text-base font-medium transition-colors duration-200 ${
-                isActive('/about') 
+                isActive('/') 
                   ? 'text-green-400' 
                   : scrolled 
                     ? 'text-white hover:text-green-400' 

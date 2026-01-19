@@ -44,7 +44,7 @@ const PlacesToVisit: React.FC = () => {
       category: 'museum',
       description: 'Explore Rwanda\'s rich colonial and natural history in this beautifully preserved building, once home to German explorer Richard Kandt.',
       image: '/images/KandtHouse.jpg',
-      images: ['/images/KandtHouse.jpg', '/images/KandtHouse.jpg', '/images/KandtHouse.jpg'],
+      images: ['/images/KandtHouse.jpg', '/images/muse1.jpg', '/images/muse2.jpg'],
       rating: 4.5,
       bestTime: '9:00 AM - 5:00 PM',
       highlights: ['Colonial Architecture', 'Natural History Exhibits', 'Historical Artifacts', 'Educational Tours'],
@@ -59,7 +59,7 @@ const PlacesToVisit: React.FC = () => {
       category: 'viewpoint',
       description: 'Kigali Nature is a peaceful restaurant surrounded by greenery, offering fresh and delicious meals in a calm environment. It is a perfect place to relax, meet friends, and enjoy nature in the heart of Kigali!',
       image: '/images/naturekigali1.jpg',
-      images: ['/images/naturekigali1.jpg', '/images/naturekigali1.jpg', '/images/naturekigali1.jpg'],
+      images: ['/images/naturekigali1.jpg', '/images/nature2.jpg', '/images/nature1.jpg'],
       rating: 4.8,
       bestTime: 'Sunset (5:30-6:30 PM)',
       highlights: ['360° City Views', 'Sunset Photography', 'Peaceful Atmosphere', 'Off the Beaten Path'],
@@ -74,7 +74,7 @@ const PlacesToVisit: React.FC = () => {
       category: 'cafe',
       description: 'Stylish rooftop café offering stunning city views, great coffee, and a vibrant atmosphere perfect for relaxing or working.',
       image: '/images/inzora1.jpg',
-      images: ['/images/inzora1.jpg', '/images/inzora1.jpg', '/images/inzora1.jpg'],
+      images: ['/images/inzora1.jpg', '/images/inzora.jpg', '/images/inzora11.jpg'],
       rating: 4.7,
       bestTime: 'Afternoon & Evening',
       highlights: ['Rooftop Views', 'Specialty Coffee', 'Modern Ambiance', 'Free WiFi'],
@@ -104,7 +104,7 @@ const PlacesToVisit: React.FC = () => {
       category: 'art',
       description: 'Immersive cultural experience where you can learn traditional Rwandan crafts, weaving, and connect with local artisans.',
       image: '/images/azizi.jpg',
-      images: ['/images/azizi.jpg', '/images/azizi.jpg', '/images/azizi.jpg'],
+      images: ['/images/azizi.jpg', '/images/azizi2.jpg', '/images/azizi.jpg'],
       rating: 4.9,
       bestTime: 'By Appointment',
       highlights: ['Cultural Workshops', 'Traditional Crafts', 'Meet Artisans', 'Handmade Souvenirs'],
@@ -119,7 +119,7 @@ const PlacesToVisit: React.FC = () => {
       category: 'park',
       description: 'Serene lake surrounded by walking trails and green spaces. Perfect for morning jogs, picnics, and bird watching.',
       image: '/images/resort day.jpg',
-      images: ['/images/resort day.jpg', '/images/resort day.jpg', '/images/resort day.jpg'],
+      images: ['/images/resort day.jpg', '/images/nature1.jpg', '/images/nature2.jpg'],
       rating: 4.4,
       bestTime: 'Early Morning or Late Afternoon',
       highlights: ['Nature Walks', 'Bird Watching', 'Peaceful Setting', 'Jogging Trails'],
@@ -134,7 +134,7 @@ const PlacesToVisit: React.FC = () => {
       category: 'restaurant',
       description: 'Upscale restaurant serving exquisite international and Rwandan fusion cuisine in an elegant setting.',
       image: '/images/noir.jpg',
-      images: ['/images/noir.jpg', '/images/noir.jpg', '/images/noir.jpg'],
+      images: ['/images/noir.jpg', '/images/poivre2.jpg', '/images/poivre1.jpg'],
       rating: 4.8,
       bestTime: 'Dinner (6:00-10:00 PM)',
       highlights: ['Fine Dining', 'Fusion Cuisine', 'Wine Selection', 'Romantic Atmosphere'],
@@ -164,7 +164,7 @@ const PlacesToVisit: React.FC = () => {
       category: 'park',
       description: 'Beautiful community park with green spaces, playgrounds, and recreational facilities. Great for families and outdoor activities.',
       image: '/images/gahanga.jpg',
-      images: ['/images/gahanga.jpg', '/images/gahanga.jpg', '/images/gahanga.jpg'],
+      images: ['/images/gahanga.jpg', '/images/greenpark1.jpg', '/images/greenpark.jpg'],
       rating: 4.5,
       bestTime: 'Weekends & Afternoons',
       highlights: ['Family-Friendly', 'Playgrounds', 'Picnic Areas', 'Sports Facilities'],
@@ -194,7 +194,7 @@ const PlacesToVisit: React.FC = () => {
       category: 'art',
       description: 'Contemporary art gallery and studio showcasing Rwanda\'s vibrant art scene with rotating exhibitions and artist workshops.',
       image: '/images/ivuka.jpg',
-      images: ['/images/ivuka.jpg', '/images/ivuka.jpg', '/images/ivuka.jpg'],
+      images: ['/images/ivuka.jpg', '/images/azizi1.jpg', '/images/ivuka.jpg'],
       rating: 4.6,
       bestTime: 'Tuesday-Sunday',
       highlights: ['Contemporary Art', 'Local Artists', 'Exhibitions', 'Art Workshops'],
@@ -209,7 +209,7 @@ const PlacesToVisit: React.FC = () => {
       category: 'restaurant',
       description: 'Soy Restaurant & Lounge offers delicious Asian cuisine, stylish ambiance, refreshing drinks, and a relaxing space for friends and family to gather and enjoy.',
       image: '/images/soyares.jpg',
-      images: ['/images/soyares.jpg', '/images/soyares.jpg', '/images/soyares.jpg'],
+      images: ['/images/soyares.jpg', '/images/poivre.jpg', '/images/poivre1.jpg'],
       rating: 4.6,
       bestTime: 'Lunch & Dinner',
       highlights: ['Delicious Asian dishes', 'Friendly service', 'Perfect for dining & hangouts'],
@@ -272,7 +272,7 @@ const PlacesToVisit: React.FC = () => {
         {/* Background Image with brightness filter */}
         <div className="absolute inset-0 z-0 bg-black">
           <Image
-            src="/images/kigali-hero.jpg"
+            src="/images/bg.jpg"
             alt="Kigali City Panorama"
             fill
             priority
